@@ -4,113 +4,65 @@
 <html>
 <head>
     <title>Document</title>
-    <link type="text/css" rel="stylesheet" href="{% static 'css/primera.css'}">
+    <link rel="stylesheet" href="{% static 'css/primera.css' %}">
 </head>
 <body>
     <header class="header">
         <div class="container-header">
-            <h1>Formulario</h1>
+            <h1>Votación</h1>
         </div>
         <nav class="menu">
             <a class="link" href="#">Inicio</a>
             <a class="link" href="#">Formularios</a>
-            <a class="link" href="#">Nosotros</a>
             <a class="link" href="#">Ayuda</a>
         </nav>
     </header>
     <form action="#" method="post">
         <div class="forms-grupos">
-            <label><b>Name</b></label>
-            <input type="text" name="name-label" id="nombre" placeholder="Ingrese su nombre" required>
+            <label><b>Radio de la zona</b></label>
+            <input type="number" name="number-label" id="edad" placeholder="Ingresa radio" required min="5" max="80">
         </div>
 
         <div class="forms-grupos">
-            <label><b>Email</b></label>
-            <input type="email" name="email-label" id="mail" placeholder="Ingrese su correo" required>
-        </div>
-
-        <div class="forms-grupos">
-            <label><b>Edad</b></label>
-            <input type="number" name="number-label" id="edad" placeholder="Ingrese su edad" required min="15" max="99">
-        </div>
-
-        <div class="forms-grupos">
-            <p><b>Describe tu rol</b></p>
+            <p><b>Describe la zona</b></p>
             <label>
                 <select name="usuario-opcion" id="select">
                     <option disabled selected value="Seleciona tu rol"></option>
-                    <option value="estudiante">Estudiante</option>
-                    <option value="profesor">Profesor</option>
-                    <option value="trabajador">Trabajador</option>
-                    <option value="directivo">Directivo</option>
+                    <option value="estudiante">Plaza</option>
+                    <option value="profesor">Playa</option>
+                    <option value="trabajador">Residencial</option>
+                    <option value="directivo">Calles</option>
                 </select>
             </label>
         </div>
 
         <div class="forms-grupos">
-            <p><b>Crees que es necesario aprender a programar?</b></p>
+            <p><b>¿Qué tan sucio se encuentra el lugar?</b></p>
 
             <label>
                 <input type="radio" name="opcion-user" id="definitivamente">
-                <b>Definitivamente</b>
+                <b>Bastante</b>
             </label>
 
             <label>
                 <input type="radio" name="opcion-user" id="probablemente">
-                <b>Probablemente</b>
+                <b>Mas o menos</b>
             </label>
 
             <label>
                 <input type="radio" name="opcion-user" id="no creo">
-                <b>No creo</b>
+                <b>No tanto</b>
             </label>
         </div>
 
         <div class="forms-grupos">
-            <p><b>Cuál crees que es el mejor lenguaje para aprender a programar?</b></p>
-            <select name="lenguaje-op" id="lenguaje">
-                <option disabled selected value="Seleciona la opcion"></option>
-                <option value="C++">C++</option>
-                <option value="Java">Java</option>
-                <option value="Python">Python</option>
-                <option value="Java Script">Java Script</option>
-                <option value="GO">Go</option>
-            </select>
-        </div>
-
-        <div class="forms-grupos">
-            <p><b>A que rama de informática te quieres dedicar?</b></p>
+            <p><b>Agrega imágenes</b></p>
 
             <label>
-                <input type="checkbox" name="front-end" id="selection-user">
-                <b>Front-End</b>
-            </label>
-            <label>
-                <input type="checkbox" name="back-end" id="selection-user">
-                <b>Back-End</b>
-            </label>
-            <label>
-                <input type="checkbox" name="full-stack" id="selection-user">
-                <b>Full-Stack</b>
-            </label>
-            <label>
-                <input type="checkbox" name="Redes" id="selection-user">
-                <b>Redes</b>
-            </label>
-            <label>
-                <input type="checkbox" name="ciber" id="selection-user">
-                <b>Ciberseguridad</b>
+                <input type="text" name="comment" id="comentarios" placeholder="Agrega imágenes...">
             </label>
         </div>
 
-        <div class="forms-grupos">
-            <p><b>Escríbenos tus comentarios</b></p>
-
-            <label>
-                <input type="text" name="comment" id="comentarios" placeholder="Escribe tu comentario...">
-            </label>
-        </div>
-        
         <div class="button">
             <input type="submit" value="Enviar">
         </div>
