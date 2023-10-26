@@ -1,7 +1,10 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/primera.css'}">
 </head>
 <body>
     <header class="header">
@@ -16,11 +19,6 @@
         </nav>
     </header>
     <form action="#" method="post">
-        <div class="forms-grupos">
-            <label><b>Name</b></label>
-            <input type="text" name="name-label" id="nombre" placeholder="Ingrese su nombre" required>
-        </div>
-
         <div class="forms-grupos">
             <label><b>Name</b></label>
             <input type="text" name="name-label" id="nombre" placeholder="Ingrese su nombre" required>
@@ -79,7 +77,43 @@
                 <option value="GO">Go</option>
             </select>
         </div>
+
+        <div class="forms-grupos">
+            <p><b>A que rama de informática te quieres dedicar?</b></p>
+
+            <label>
+                <input type="checkbox" name="front-end" id="selection-user">
+                <b>Front-End</b>
+            </label>
+            <label>
+                <input type="checkbox" name="back-end" id="selection-user">
+                <b>Back-End</b>
+            </label>
+            <label>
+                <input type="checkbox" name="full-stack" id="selection-user">
+                <b>Full-Stack</b>
+            </label>
+            <label>
+                <input type="checkbox" name="Redes" id="selection-user">
+                <b>Redes</b>
+            </label>
+            <label>
+                <input type="checkbox" name="ciber" id="selection-user">
+                <b>Ciberseguridad</b>
+            </label>
+        </div>
+
+        <div class="forms-grupos">
+            <p><b>Escríbenos tus comentarios</b></p>
+
+            <label>
+                <input type="text" name="comment" id="comentarios" placeholder="Escribe tu comentario...">
+            </label>
+        </div>
         
+        <div class="button">
+            <input type="submit" value="Enviar">
+        </div>
     </form>
 </body>
 </html>
