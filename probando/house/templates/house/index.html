@@ -4,6 +4,9 @@
 
 </head>
 <body>
-  <h1>LOL</h1>
+  <h1>{{tittle}}</h1>
+  {% for product in products %}
+  <div>{{ product.name}}, {{product.price}}</div>
+  {% endfor %}
 </body>
 </html>
