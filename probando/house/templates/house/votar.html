@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/house.css' %}">
+</head>
+<body>
+  <h1 class="tittle">{{tittle}}</h1>
+  <div class="superior">
+    {% for x in base %}
+    <h2 class="ubi">{{x.ubicacion}}</h2>
+    <p class="desc">{{x.desc}}</p>
+    <p class="api">{{api}}</p>
+    <p class="correo">{{x.correo}}</p>
+    <div class="button">
+      <input type="submit" value="Si">
+    </div>
+    <div class="button">
+        <input type="submit" value="No">
+      </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
