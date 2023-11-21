@@ -30,54 +30,42 @@
 form{
     margin: 50px auto;
     background-color: #1ABC9C;
-    width: 700px;
+    width: 1500px;
     padding: 2.5rem;
     border-radius: 5px;
 }
 
-.forms-grupos{
+.bottom{
     display: flex;
     flex-direction: column;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 900;
-}
-
-input[tupe="text"]{
-    margin: 15px 0;
-    font-size: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    color: #1ABC9C;
-}
-
-input[tupe="email"]{
-    margin: 15px 0;
-    font-size: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    color: #1ABC9C;
-}
-
-input[tupe="number"]{
-    margin: 15px 0;
-    font-size: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    color: #1ABC9C;
 }
 
 p{
     font-size: 21px;
 }
 
-input[type="submit"]{
-    width: 100%;
-    padding: 10px;
+input[type="text"]{
+    width: 80%;
+    padding: 100px;
     font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant-position: super;
+    font-weight: 700;
+    transition: all 0.03s ease;
+}
+
+
+input[type="submit"]{
+    width: 10%;
+    padding: 10px;
+    font-size: 20px;
     border: none;
     border-radius: 5px;
     background-color: #2ECC71;
@@ -85,6 +73,7 @@ input[type="submit"]{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
     transition: all 0.3s ease;
+    align-self: center;
 }
 
 input[type="submit"]:hover{
@@ -93,4 +82,12 @@ input[type="submit"]:hover{
 
 body{
     background-color: rgb(110, 241, 198);
+}
+
+::placeholder{
+    color: rgb(59, 57, 57);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.003s ease;
+    font-size: 16px;
+    position: relative;
 }

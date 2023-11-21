@@ -9,103 +9,20 @@
 <body>
     <header class="header">
         <div class="container-header">
-            <h1>Formulario</h1>
+            <h1>Bienvenido</h1>
         </div>
         <nav class="menu">
-            <a class="link" href="#">Inicio</a>
-            <a class="link" href="#">Formularios</a>
-            <a class="link" href="#">Nosotros</a>
-            <a class="link" href="#">Ayuda</a>
+            <a class="link" href="/">Inicio</a>
+            <a class="link" href="crear/">Formularios</a>
+            <a class="link" href="votar">Votar</a>
         </nav>
     </header>
+    <h2>Ayudemos a la comunidad</h2>
+    <p>Está página es un ejemplo relleno de palabras para probar</p>
+
     <form action="#" method="post">
-        <div class="forms-grupos">
-            <label><b>Name</b></label>
-            <input type="text" name="name-label" id="nombre" placeholder="Ingrese su nombre" required>
-        </div>
-
-        <div class="forms-grupos">
-            <label><b>Email</b></label>
-            <input type="email" name="email-label" id="mail" placeholder="Ingrese su correo" required>
-        </div>
-
-        <div class="forms-grupos">
-            <label><b>Radio de la zona</b></label>
-            <input type="number" name="number-label" id="edad" placeholder="Ingresa radio" required min="5" max="80">
-        </div>
-
-        <div class="forms-grupos">
-            <p><b>Describe tu rol</b></p>
-            <label>
-                <select name="usuario-opcion" id="select">
-                    <option disabled selected value="Seleciona tu rol"></option>
-                    <option value="estudiante">Estudiante</option>
-                    <option value="profesor">Profesor</option>
-                    <option value="trabajador">Trabajador</option>
-                    <option value="directivo">Directivo</option>
-                </select>
-            </label>
-        </div>
-
-        <div class="forms-grupos">
-            <p><b>Crees que es necesario aprender a programar?</b></p>
-
-            <label>
-                <input type="radio" name="opcion-user" id="definitivamente">
-                <b>Definitivamente</b>
-            </label>
-
-            <label>
-                <input type="radio" name="opcion-user" id="probablemente">
-                <b>Probablemente</b>
-            </label>
-
-            <label>
-                <input type="radio" name="opcion-user" id="no creo">
-                <b>No creo</b>
-            </label>
-        </div>
-
-        <div class="forms-grupos">
-            <p><b>Cuál crees que es el mejor lenguaje para aprender a programar?</b></p>
-            <select name="lenguaje-op" id="lenguaje">
-                <option disabled selected value="Seleciona la opcion"></option>
-                <option value="C++">C++</option>
-                <option value="Java">Java</option>
-                <option value="Python">Python</option>
-                <option value="Java Script">Java Script</option>
-                <option value="GO">Go</option>
-            </select>
-        </div>
-
-        <div class="forms-grupos">
-            <p><b>A que rama de informática te quieres dedicar?</b></p>
-
-            <label>
-                <input type="checkbox" name="front-end" id="selection-user">
-                <b>Front-End</b>
-            </label>
-            <label>
-                <input type="checkbox" name="back-end" id="selection-user">
-                <b>Back-End</b>
-            </label>
-            <label>
-                <input type="checkbox" name="full-stack" id="selection-user">
-                <b>Full-Stack</b>
-            </label>
-            <label>
-                <input type="checkbox" name="Redes" id="selection-user">
-                <b>Redes</b>
-            </label>
-            <label>
-                <input type="checkbox" name="ciber" id="selection-user">
-                <b>Ciberseguridad</b>
-            </label>
-        </div>
-
-        <div class="forms-grupos">
+        <div class="bottom">
             <p><b>Escríbenos tus comentarios</b></p>
-
             <label>
                 <input type="text" name="comment" id="comentarios" placeholder="Escribe tu comentario...">
             </label>
