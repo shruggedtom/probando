@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from house.models import Product
+from votar.models import Product
 
 def index(request):
     products = Product.objects.all()
     tittle = 'Votaciones!!'
-    return(render(request,"house/index.html",{
+    return(render(request,"votar/index.html",{
         'tittle': tittle ,
         'products': products ,
     }))
@@ -12,7 +12,7 @@ def index(request):
 def votar(request):
     products = Product.objects.all()
     tittle = 'Haciendo cosas!!'
-    return(render(request,"house/votar.html",{
+    return(render(request,"votar/votar.html",{
         'tittle': tittle ,
         'x': products ,
     }))
